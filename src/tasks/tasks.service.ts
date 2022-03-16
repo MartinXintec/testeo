@@ -12,7 +12,7 @@ export class TasksService {
 constructor(@InjectModel('Task') private taskModel: Model<Task>) {}
 
 
-async getTasks(): Promise<Task[]>{  // Comentario de testeo para git
+async getTasks(): Promise<Task[]>{  // Comentario de testeo para git, version 2.0 recargado
 
     const tasks = await this.taskModel.find();
         console.log(tasks);
